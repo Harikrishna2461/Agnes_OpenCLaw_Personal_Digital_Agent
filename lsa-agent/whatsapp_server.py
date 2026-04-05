@@ -18,7 +18,8 @@ from main import LifeSimulationAgent
 import requests
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_file, render_template_string
+from flask_cors import CORS
 from typing import Optional, Dict
 
 logger = logging.getLogger(__name__)
@@ -26,9 +27,12 @@ logger = logging.getLogger(__name__)
 # Load environment
 load_dotenv()
 
-# Initialize Flask app
-app = Flask(__name__)
+# Initialize Flask app with static folder
+app = Flask(__name__, static_folder='static', static_url_path='/static')
 app.config['JSON_SORT_KEYS'] = False
+
+# Enable CORS for all routes
+CORS(app)
 
 
 class LSAWhatsAppServer:
@@ -262,6 +266,16 @@ def init_server():
     return True
 
 
+@app.route("/", methods=["GET"])
+def serve_web_app():
+    """Serve the web app interface."""
+    try:
+        with open('static/index.html', 'r') as f:
+            return f.read()
+    except FileNotFoundError:
+        return jsonify({"error": "Web interface not found"}), 404
+
+
 @app.route("/health", methods=["GET"])
 def health():
     """Health check endpoint."""
@@ -349,11 +363,11 @@ def start_server(host: str = "0.0.0.0", port: int = 5000, debug: bool = False):
         logger.error("❌ Failed to initialize server")
         return
 
-    logger.info(f"🚀 Starting LSA WhatsApp Server...")
-    logger.info(f"📱 WhatsApp: {whatsapp_server.phone_number}")
-    logger.info(f"🌐 Webhook: http://{host}:{port}/webhook/whatsapp")
-    logger.info(f"📊 Health: http://{host}:{port}/health")
-    logger.info(f"✅ Verify: http://{host}:{port}/webhook/verify")
+    logger.info(f"🚀 Starting LSA Agent Server...")
+    logger.info(f"🌐 Web Interface: http://localhost:{port}/")
+    logger.info(f"📱 API Webhook: http://localhost:{port}/webhook/whatsapp")
+    logger.info(f"📊 Health: http://localhost:{port}/health")
+    logger.info(f"✅ Verify: http://localhost:{port}/webhook/verify")
 
     app.run(
         host=host,
