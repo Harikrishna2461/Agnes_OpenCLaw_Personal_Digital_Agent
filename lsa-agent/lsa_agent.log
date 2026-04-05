@@ -520,3 +520,21 @@
 2026-04-05 16:09:52,361 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
 2026-04-05 16:09:52,503 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
 2026-04-05 16:09:52,503 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:09:52] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:14:03,466 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 16:14:03,466 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 16:14:06,675 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 16 memories.
+2026-04-05 16:14:06,675 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 16:14:06,676 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 16:14:06,676 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 16:14:06,676 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 16:14:06,676 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 16:14:06,676 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 16:14:06,676 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 16:14:06,676 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 16:14:06,676 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+2026-04-05 16:14:06,700 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.9:5001
+2026-04-05 16:14:06,700 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 16:14:10,145 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:14:10] "GET /health HTTP/1.1" 200 -
