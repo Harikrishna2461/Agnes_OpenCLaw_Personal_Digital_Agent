@@ -1,3 +1,4 @@
+#!/opt/homebrew/bin/python3.11
 """
 Production WhatsApp Integration for LSA via OpenClaw.
 Receives real WhatsApp messages and responds directly.
