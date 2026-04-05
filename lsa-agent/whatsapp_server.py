@@ -131,25 +131,37 @@ class LSAWhatsAppServer:
             try:
                 result = self.agent.simulate_decision(message_body)
                 rec = result["recommendation"]
+                scenarios = result.get("scenarios", {})
+
+                # Extract scenario details from result
+                detail_a = scenarios.get("A", {})
+                detail_b = scenarios.get("B", {})
+                detail_c = scenarios.get("C", {})
 
                 response = f"""🤖 *LSA Decision Analysis*
 
 📌 *Decision:*
 {message_body}
 
-🎯 *Scenarios (7 days):*
-A - Continue: Risk ⚠️
-B - Moderate: Low Risk ✓
-C - Optimal: Medium Risk
+🎯 *Your Options (7 days):*
 
-✅ *Recommendation:* {rec}
+A️⃣ *Minimal Effort* 
+   {detail_a.get('description', 'Skip/avoid or maintain status quo')}
+   Risk: {detail_a.get('risk', 'Low')} | Confidence: {detail_a.get('confidence', 80):.0f}%
+   Score: {result['scores'].get('A: Minimal Effort / Conservative', 81):.0f}
 
-📊 *Scores:*
-A = {result['scores']['A: Continue Current Behavior']:.0f}
-B = {result['scores']['B: Moderate Improvement']:.0f}
-C = {result['scores']['C: Optimal Behavior']:.0f}
+B️⃣ *Balanced* ✨ RECOMMENDED
+   {detail_b.get('description', 'Moderate effort with good results')}
+   Risk: {detail_b.get('risk', 'Low')} | Confidence: {detail_b.get('confidence', 86):.0f}%
+   Score: {result['scores'].get('B: Balanced / Moderate Effort (RECOMMENDED)', 125):.0f}
 
-💡 Higher score = better outcome"""
+C️⃣ *Maximum Effort*
+   {detail_c.get('description', 'Full commitment for best results')}
+   Risk: {detail_c.get('risk', 'High')} | Confidence: {detail_c.get('confidence', 68):.0f}%
+   Score: {result['scores'].get('C: Maximum Effort / Ambitious', 154):.0f}
+
+✅ *Best Choice:* {rec}
+💡 Higher score = Better long-term outcome"""
 
                 return response
             except Exception as e:
@@ -299,7 +311,7 @@ def whatsapp_webhook():
         return jsonify({
             "status": "ok",
             "sent": success,
-            "response_preview": response_text[:100]
+            "response": response_text  # Full response, not truncated
         }), 200
 
     except Exception as e:

@@ -259,3 +259,143 @@
  * Running on http://127.0.0.1:5001
  * Running on http://192.168.0.9:5001
 2026-04-05 15:20:22,240 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 15:41:25,738 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 15:41:25,738 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 15:41:29,459 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 15 memories.
+2026-04-05 15:41:29,459 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 15:41:29,459 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 15:41:29,459 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 15:41:29,459 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 15:41:29,459 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 15:41:29,459 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 15:41:29,459 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5000/webhook/whatsapp
+2026-04-05 15:41:29,459 - __main__ - INFO - 📊 Health: http://0.0.0.0:5000/health
+2026-04-05 15:41:29,459 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5000/webhook/verify
+2026-04-05 15:41:45,422 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 15:41:45,422 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 15:41:46,145 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 15:41:46] "GET /health HTTP/1.1" 200 -
+2026-04-05 15:41:48,630 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 15 memories.
+2026-04-05 15:41:48,631 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 15:41:48,631 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 15:41:48,631 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 15:41:48,631 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 15:41:48,631 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 15:41:48,631 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 15:41:48,631 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 15:41:48,631 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 15:41:48,631 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+2026-04-05 15:42:06,245 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 15:42:06,245 - __main__ - INFO - 📨 Received from +917010384691: hey
+2026-04-05 15:42:06,560 - __main__ - ERROR - ❌ Send error: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with url: /v1/messages/send (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)')))
+2026-04-05 15:42:06,564 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 15:42:06] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 15:42:13,627 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 15:42:13,627 - __main__ - INFO - 📨 Received from +917010384691: Hey
+2026-04-05 15:42:13,820 - __main__ - ERROR - ❌ Send error: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with url: /v1/messages/send (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)')))
+2026-04-05 15:42:13,821 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 15:42:13] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 15:42:32,632 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 15:42:32,632 - __main__ - INFO - 📨 Received from +917010384691: Should I study for 2 hours right now?
+2026-04-05 15:42:32,633 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: Should I study for 2 hours right now?...
+2026-04-05 15:42:32,633 - main - INFO - Decision simulated: Should I study for 2 hours right now?
+2026-04-05 15:42:32,633 - main - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 15:42:32,783 - __main__ - ERROR - ❌ Send error: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with url: /v1/messages/send (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)')))
+2026-04-05 15:42:32,784 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 15:42:32] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 15:42:47,098 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 15:42:47] "GET /health HTTP/1.1" 200 -
+2026-04-05 15:42:47,099 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 15:42:47] "GET /webhook/verify HTTP/1.1" 200 -
+2026-04-05 15:42:47,101 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 15:42:47,101 - __main__ - INFO - 📨 Received from +917010384691: Should I study for 2 hours today?
+2026-04-05 15:42:47,101 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: Should I study for 2 hours today?...
+2026-04-05 15:42:47,101 - main - INFO - Decision simulated: Should I study for 2 hours today?
+2026-04-05 15:42:47,101 - main - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 15:42:47,284 - __main__ - ERROR - ❌ Send error: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with url: /v1/messages/send (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)')))
+2026-04-05 15:42:47,284 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 15:42:47] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 15:42:47,288 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 15:42:47,288 - __main__ - INFO - 📨 Received from +917010384691: Completed 90 minute study session
+2026-04-05 15:42:48,178 - memory_manager.memory - INFO - Memory added: 22b64f8c-b33e-4d67-b616-137440b4f84d (whatsapp_event)
+2026-04-05 15:42:48,178 - main - INFO - Event logged: whatsapp_event - Completed 90 minute study session...
+2026-04-05 15:42:48,178 - __main__ - INFO - 💾 Event logged
+2026-04-05 15:42:48,460 - __main__ - ERROR - ❌ Send error: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with url: /v1/messages/send (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)')))
+2026-04-05 15:42:48,461 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 15:42:48] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 15:42:48,467 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 15:42:48,467 - __main__ - INFO - 📨 Received from +917010384691: /status
+2026-04-05 15:42:48,628 - __main__ - ERROR - ❌ Send error: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with url: /v1/messages/send (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)')))
+2026-04-05 15:42:48,629 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 15:42:48] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 15:43:01,898 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 15:43:01,898 - __main__ - INFO - 📨 Received from +917010384691: Should I study for 2 hours right now?
+2026-04-05 15:43:01,898 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: Should I study for 2 hours right now?...
+2026-04-05 15:43:01,898 - main - INFO - Decision simulated: Should I study for 2 hours right now?
+2026-04-05 15:43:01,898 - main - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 15:43:02,049 - __main__ - ERROR - ❌ Send error: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with url: /v1/messages/send (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)')))
+2026-04-05 15:43:02,050 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 15:43:02] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 15:43:38,343 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 15:43:38,343 - __main__ - INFO - 📨 Received from +917010384691: hey, can I skip class today
+2026-04-05 15:43:38,344 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: hey, can I skip class today...
+2026-04-05 15:43:38,344 - main - INFO - Decision simulated: hey, can I skip class today
+2026-04-05 15:43:38,344 - main - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 15:43:38,543 - __main__ - ERROR - ❌ Send error: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with url: /v1/messages/send (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)')))
+2026-04-05 15:43:38,544 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 15:43:38] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 15:43:48,073 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 15:43:48,073 - __main__ - INFO - 📨 Received from +917010384691: Should I study for 2 hours right now?
+2026-04-05 15:43:48,073 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: Should I study for 2 hours right now?...
+2026-04-05 15:43:48,073 - main - INFO - Decision simulated: Should I study for 2 hours right now?
+2026-04-05 15:43:48,073 - main - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 15:43:48,260 - __main__ - ERROR - ❌ Send error: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with url: /v1/messages/send (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)')))
+2026-04-05 15:43:48,261 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 15:43:48] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 15:44:48,537 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 15:44:48,538 - __main__ - INFO - 📨 Received from +917010384691: Should I study for 2 hours right now?
+2026-04-05 15:44:48,538 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: Should I study for 2 hours right now?...
+2026-04-05 15:44:48,538 - main - INFO - Decision simulated: Should I study for 2 hours right now?
+2026-04-05 15:44:48,538 - main - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 15:44:48,693 - __main__ - ERROR - ❌ Send error: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with url: /v1/messages/send (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)')))
+2026-04-05 15:44:48,693 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 15:44:48] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 15:45:14,096 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 15:45:14,097 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 15:45:17,264 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 16 memories.
+2026-04-05 15:45:17,264 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 15:45:17,264 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 15:45:17,264 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 15:45:17,264 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 15:45:17,264 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 15:45:17,264 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 15:45:17,264 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 15:45:17,264 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 15:45:17,264 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+2026-04-05 15:45:17,270 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.9:5001
+2026-04-05 15:45:17,270 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 15:45:26,766 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 15:45:26,766 - __main__ - INFO - 📨 Received from +917010384691: Should I study for 2 hours right now?
+2026-04-05 15:45:26,766 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: Should I study for 2 hours right now?...
+2026-04-05 15:45:26,766 - main - INFO - Decision simulated: Should I study for 2 hours right now?
+2026-04-05 15:45:26,766 - main - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 15:45:26,917 - __main__ - ERROR - ❌ Send error: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with url: /v1/messages/send (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)')))
+2026-04-05 15:45:26,918 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 15:45:26] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 15:45:31,607 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 15:45:31,607 - __main__ - INFO - 📨 Received from +917010384691: Should I study for 2 hours right now?
+2026-04-05 15:45:31,607 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: Should I study for 2 hours right now?...
+2026-04-05 15:45:31,607 - main - INFO - Decision simulated: Should I study for 2 hours right now?
+2026-04-05 15:45:31,607 - main - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 15:45:31,786 - __main__ - ERROR - ❌ Send error: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with url: /v1/messages/send (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)')))
+2026-04-05 15:45:31,786 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 15:45:31] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 15:45:46,855 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 15:45:46,856 - __main__ - INFO - 📨 Received from +917010384691: Should I study for 2 hours right now?
+2026-04-05 15:45:46,856 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: Should I study for 2 hours right now?...
+2026-04-05 15:45:46,856 - main - INFO - Decision simulated: Should I study for 2 hours right now?
+2026-04-05 15:45:46,856 - main - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 15:45:47,026 - __main__ - ERROR - ❌ Send error: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with url: /v1/messages/send (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)')))
+2026-04-05 15:45:47,027 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 15:45:47] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 15:46:17,545 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 15:46:17,546 - __main__ - INFO - 📨 Received from +917010384691: Should I study for 2 hours right now?
+2026-04-05 15:46:17,546 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: Should I study for 2 hours right now?...
+2026-04-05 15:46:17,546 - main - INFO - Decision simulated: Should I study for 2 hours right now?
+2026-04-05 15:46:17,546 - main - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 15:46:17,723 - __main__ - ERROR - ❌ Send error: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with url: /v1/messages/send (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)')))
+2026-04-05 15:46:17,723 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 15:46:17] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 15:46:37,149 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 15:46:37,149 - __main__ - INFO - 📨 Received from +917010384691: can I skip classes
+2026-04-05 15:46:37,150 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: can I skip classes...
+2026-04-05 15:46:37,150 - main - INFO - Decision simulated: can I skip classes
+2026-04-05 15:46:37,150 - main - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 15:46:37,443 - __main__ - ERROR - ❌ Send error: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with url: /v1/messages/send (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)')))
+2026-04-05 15:46:37,444 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 15:46:37] "POST /webhook/whatsapp HTTP/1.1" 200 -

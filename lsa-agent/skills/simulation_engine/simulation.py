@@ -147,69 +147,201 @@ Each needs: name, description, outcomes, risk_level, confidence_score, key_metri
         current_decision: str,
         memory_history: Optional[List[Dict]] = None,
     ) -> List[Scenario]:
-        """Generate scenarios using heuristic fallback."""
+        """Generate scenarios using heuristic fallback with DECISION-SPECIFIC details and DYNAMIC SCORES."""
         
         # Extract patterns from memory
         patterns = self._extract_patterns(memory_history)
         
+        # Generate decision-specific scenario descriptions
+        scenario_descriptions = self._generate_scenario_descriptions(current_decision, patterns)
+        
+        # Generate decision-specific outcome scores
+        outcome_scores = self._generate_outcome_scores(current_decision, patterns)
+        
         # Build scenarios based on decision
         scenarios = []
         
-        # Scenario A: Continue current
+        # Scenario A: Minimal/Conservative choice
         scenario_a = Scenario(
-            name="A: Continue Current Behavior",
-            description=f"Maintain current pattern without changes",
+            name="A: Minimal Effort / Conservative",
+            description=scenario_descriptions[0],
             timeframe="7 days",
-            predicted_outcomes={
-                "consistency_score": patterns.get("consistency", 60),
-                "goal_progress": patterns.get("progress", 30),
-                "momentum_change": -5,
-                "energy_trend": patterns.get("energy_trend", 0),
+            predicted_outcomes=outcome_scores["A"],
+            risk_level="low",
+            confidence_score=85.0,
+            key_metrics={
+                "effort_level": "Minimal (0-10%)",
+                "outcome": "Maintain status quo",
+                "satisfaction": "Neutral to regretful"
             },
-            risk_level="moderate",
-            confidence_score=75.0,
-            key_metrics=patterns.get("metrics", {}),
-            regret_prediction="Likely to maintain current trajectory; no progress on goals."
+            regret_prediction="High regret. You'll likely wish you took action."
         )
         scenarios.append(scenario_a)
         
-        # Scenario B: Moderate improvement
+        # Scenario B: Balanced choice
         scenario_b = Scenario(
-            name="B: Moderate Improvement",
-            description="Apply reasonable effort adjustments (30-50% increase)",
+            name="B: Balanced / Moderate Effort (RECOMMENDED)",
+            description=scenario_descriptions[1],
             timeframe="7 days",
-            predicted_outcomes={
-                "consistency_score": min(100, int(patterns.get("consistency", 60) * 1.3)),
-                "goal_progress": int(patterns.get("progress", 30) * 1.5),
-                "momentum_change": 15,
-                "energy_trend": patterns.get("energy_trend", 0) + 10,
-            },
+            predicted_outcomes=outcome_scores["B"],
             risk_level="low",
-            confidence_score=82.0,
-            key_metrics=patterns.get("metrics", {}),
-            regret_prediction="Some effort required, but sustainable. Likely satisfied with progress."
+            confidence_score=88.0,
+            key_metrics={
+                "effort_level": "Moderate (40-60%)",
+                "outcome": "Sustainable progress",
+                "satisfaction": "Good. Balanced effort & reward."
+            },
+            regret_prediction="Low regret. Best balance of effort and outcome."
         )
         scenarios.append(scenario_b)
         
-        # Scenario C: Optimal
+        # Scenario C: High effort choice
         scenario_c = Scenario(
-            name="C: Optimal Behavior",
-            description="Full commitment to recommendations",
+            name="C: Maximum Effort / Ambitious",
+            description=scenario_descriptions[2],
             timeframe="7 days",
-            predicted_outcomes={
-                "consistency_score": 95,
-                "goal_progress": int(patterns.get("progress", 30) * 2.5),
-                "momentum_change": 35,
-                "energy_trend": patterns.get("energy_trend", 0) + 20,
+            predicted_outcomes=outcome_scores["C"],
+            risk_level="high",
+            confidence_score=72.0,
+            key_metrics={
+                "effort_level": "High (80-100%)",
+                "outcome": "Maximum results but exhausting",
+                "satisfaction": "Accomplished but tired"
             },
-            risk_level="medium",
-            confidence_score=68.0,
-            key_metrics=patterns.get("metrics", {}),
-            regret_prediction="High short-term effort, but likely to feel accomplished and on-track."
+            regret_prediction="Variable. May feel proud but burnt out. Not sustainable."
         )
         scenarios.append(scenario_c)
         
         return scenarios
+
+    def _generate_outcome_scores(self, decision: str, patterns: Dict) -> Dict:
+        """Generate DECISION-SPECIFIC outcome scores (not hardcoded)."""
+        
+        decision_lower = decision.lower()
+        base_consistency = patterns.get("consistency", 60)
+        base_progress = patterns.get("progress", 30)
+        
+        is_class = any(w in decision_lower for w in ["class", "attend", "school"])
+        is_study = any(w in decision_lower for w in ["study", "homework", "exam"])
+        is_work = any(w in decision_lower for w in ["work", "code", "project"])
+        is_exercise = any(w in decision_lower for w in ["gym", "workout", "exercise"])
+        is_rest = any(w in decision_lower for w in ["break", "rest", "vacation"])
+        is_sleep = any(w in decision_lower for w in ["sleep", "nap"])
+        
+        is_skip = any(w in decision_lower for w in ["skip", "avoid", "ditch"])
+        
+        # Scenario A: Minimal effort - minimal gains
+        if is_skip:
+            cons_a, prog_a = base_consistency - 10, base_progress - 15
+        else:
+            cons_a, prog_a = base_consistency, base_progress
+        
+        # Scenario B: Balanced - good gains (1.5-1.8x multiplier)
+        if is_class or is_study:
+            cons_b, prog_b = min(90, int(base_consistency * 1.5)), int(base_progress * 1.8)
+        elif is_exercise:
+            cons_b, prog_b = min(95, int(base_consistency * 1.6)), int(base_progress * 2.0)
+        elif is_work:
+            cons_b, prog_b = min(85, int(base_consistency * 1.4)), int(base_progress * 2.2)
+        else:
+            cons_b, prog_b = min(100, int(base_consistency * 1.4)), int(base_progress * 1.8)
+        
+        # Scenario C: Maximum effort - best gains but high risk (2.5-3.5x multiplier)
+        if is_class or is_study:
+            cons_c, prog_c = 98, int(base_progress * 3.2)
+        elif is_exercise:
+            cons_c, prog_c = 99, int(base_progress * 3.8)
+        elif is_work:
+            cons_c, prog_c = 92, int(base_progress * 3.5)
+        else:
+            cons_c, prog_c = 95, int(base_progress * 3.0)
+        
+        return {
+            "A": {
+                "consistency_score": max(0, cons_a),
+                "goal_progress": max(0, prog_a),
+                "momentum_change": -5 if is_skip else 0,
+                "energy_trend": -5,
+            },
+            "B": {
+                "consistency_score": min(100, cons_b),
+                "goal_progress": prog_b,
+                "momentum_change": 15,
+                "energy_trend": 8,
+            },
+            "C": {
+                "consistency_score": min(100, cons_c),
+                "goal_progress": prog_c,
+                "momentum_change": 35,
+                "energy_trend": 20,
+            },
+        }
+
+    def _generate_scenario_descriptions(self, decision: str, patterns: Dict) -> List[str]:
+        """Generate SPECIFIC scenario descriptions based on the user's actual decision."""
+        
+        decision_lower = decision.lower()
+        
+        # First, identify the DECISION TYPE (what activity/decision is being made)
+        is_class_related = any(word in decision_lower for word in ["class", "classes", "attend", "school", "lecture", "course"])
+        is_study_related = any(word in decision_lower for word in ["study", "study session", "homework", "assignment", "exam", "revise", "practice problem"])
+        is_work_related = any(word in decision_lower for word in ["work", "code", "project", "job", "task", "deadline", "meeting"])
+        is_exercise_related = any(word in decision_lower for word in ["exercise", "gym", "workout", "run", "walk", "sport", "yoga", "training"])
+        is_rest_related = any(word in decision_lower for word in ["break", "rest", "vacation", "weekend", "relax", "chill"])
+        is_sleep_related = any(word in decision_lower for word in ["sleep", "nap", "bed", "sleep in"])
+        
+        # Now identify the ACTION (should I do it, skip it, etc.)
+        is_skip_action = any(word in decision_lower for word in ["skip", "avoid", "ditch", "bail", "not do", "not take"])
+        
+        # Scenario A: Minimal Effort / Don't Do It
+        if is_class_related or (is_skip_action and "class" in decision_lower):
+            desc_a = "Skip/avoid entirely. Sleep in, relax, no commitment. Short-term comfort but likely regret later about lost opportunity."
+        elif is_study_related and is_skip_action:
+            desc_a = "Don't do it at all. Stick to current routine. No new effort. Stay comfortable but miss learning."
+        elif is_exercise_related or (is_skip_action and any(w in decision_lower for w in ["gym", "workout", "exercise"])):
+            desc_a = "Skip exercise entirely. Stay home, relax. Short-term comfort but no fitness gains. Risk losing momentum."
+        elif is_work_related and is_skip_action:
+            desc_a = "Don't work on it. Procrastinate. Short-term relief but deadline stress builds."
+        elif is_rest_related:
+            desc_a = "No break. Keep grinding. No time off. Continue as-is. Risk burnout but maintain short-term momentum."
+        elif is_sleep_related:
+            desc_a = "Don't sleep. Keep working. Short-term productivity but health suffers."
+        else:
+            desc_a = "Do nothing / maintain current pattern. Risk staying stagnant but safe."
+        
+        # Scenario B: Balanced / Moderate Effort (RECOMMENDED)
+        if is_class_related:
+            desc_b = "Attend but come late (30 min) or leave early. Get 70% attendance. Compromise: some learning + some rest."
+        elif is_study_related:
+            desc_b = "Study for 60-90 minutes instead of 2-3 hours. Quality > quantity. Get meaningful progress with reasonable effort."
+        elif is_work_related:
+            desc_b = "Work for 1-2 more hours then stop. Productive progress without excessive overtime. Protect your sleep."
+        elif is_exercise_related:
+            desc_b = "30-minute workout instead of full session. Still active, less exhausting. Hit 70% of benefits."
+        elif is_rest_related:
+            desc_b = "Take partial break (3-4 days). Recharge without fully stopping. Find balance between rest and momentum."
+        elif is_sleep_related:
+            desc_b = "Take 20-30 minute nap. Quick refresh without affecting nighttime sleep. Energy boost."
+        else:
+            desc_b = "Moderate approach. Apply 50% effort for balanced results."
+        
+        # Scenario C: Maximum Effort / Full Commitment
+        if is_class_related:
+            desc_c = "Attend full class + review notes after. 100% engagement. Maximum learning but uses your evening."
+        elif is_study_related:
+            desc_c = "Study 2-3 hours intensely as planned. Deep understanding. Finish assignments early. High output, energy-draining."
+        elif is_work_related:
+            desc_c = "Work 3+ extra hours. Complete multiple projects/tasks. Major progress but risk tomorrow's fatigue."
+        elif is_exercise_related:
+            desc_c = "Full 90-minute workout + stretching. Maximum fitness gains. Feel accomplished but very tired after."
+        elif is_rest_related:
+            desc_c = "Full 1-week break. Complete rest. Maximum recovery. Back at 100% but lose momentum."
+        elif is_sleep_related:
+            desc_c = "Full 2-3 hour deep sleep. Complete rest. Maximum recovery but may affect night sleep."
+        else:
+            desc_c = "Go all-in. Maximum effort and commitment. Highest returns but most taxing."
+        
+        return [desc_a, desc_b, desc_c]
 
     def _extract_patterns(
         self, memory_history: Optional[List[Dict]]

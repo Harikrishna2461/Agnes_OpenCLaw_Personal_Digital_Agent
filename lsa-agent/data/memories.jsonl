@@ -13,3 +13,4 @@
 {"id": "eaf53ab1-3aac-43b8-ace9-e895b4781b35", "timestamp": "2026-04-05T14:49:56.715414", "category": "study", "content": "Completed full study session (2 hours)", "impact_score": 9.0, "tags": ["focused", "productive"], "context": {}}
 {"id": "0f708004-4769-4b61-b8b0-0bd1118f4d24", "timestamp": "2026-04-05T14:49:56.865681", "category": "health", "content": "Morning jog (30 min)", "impact_score": 8.0, "tags": [], "context": {}}
 {"id": "e6835528-1cfc-49cb-a65f-bbbaa4a67be1", "timestamp": "2026-04-05T14:49:56.904871", "category": "productivity", "content": "Afternoon work on project", "impact_score": 7.5, "tags": [], "context": {}}
+{"id": "22b64f8c-b33e-4d67-b616-137440b4f84d", "timestamp": "2026-04-05T15:42:47.288571", "category": "whatsapp_event", "content": "Completed 90 minute study session", "impact_score": 5.0, "tags": ["user_reported"], "context": {}}

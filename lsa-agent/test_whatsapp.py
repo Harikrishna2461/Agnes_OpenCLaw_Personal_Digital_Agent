@@ -10,7 +10,7 @@ import sys
 from typing import Dict, Optional
 import time
 
-BASE_URL = "http://localhost:5000"
+BASE_URL = "http://localhost:5001"
 
 
 class WhatsAppTester:
@@ -74,7 +74,7 @@ class WhatsAppTester:
             return ""
 
         print(f"✅ Response received")
-        return result.get("response_preview", "")
+        return result.get("response", "")
 
     def test_event_logging(self, event: str) -> str:
         """Test event logging."""
@@ -86,7 +86,7 @@ class WhatsAppTester:
             return ""
 
         print(f"✅ Event logged")
-        return result.get("response_preview", "")
+        return result.get("response", "")
 
     def test_command(self, cmd: str) -> str:
         """Test command."""
@@ -98,7 +98,7 @@ class WhatsAppTester:
             return ""
 
         print(f"✅ Command executed")
-        return result.get("response_preview", "")
+        return result.get("response", "")
 
     def interactive_mode(self):
         """Run interactive testing mode."""
@@ -130,7 +130,7 @@ class WhatsAppTester:
                 if "error" in result:
                     print(f"❌ Error: {result['error']}\n")
                 else:
-                    print(f"✅ LSA:\n{result.get('response_preview', 'No preview')}\n")
+                    print(f"✅ LSA:\n{result.get('response', 'No response')}\n")
 
             except KeyboardInterrupt:
                 print("\n\n👋 Interrupted!")

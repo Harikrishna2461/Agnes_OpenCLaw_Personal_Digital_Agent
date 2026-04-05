@@ -1,7 +1,7 @@
 # Life Simulation Agent (LSA) Requirements
 
 # Core Dependencies
-python>=3.9
+# Python 3.9+ required (install manually if needed)
 
 # ML & NLP
 sentence-transformers>=2.2.0
