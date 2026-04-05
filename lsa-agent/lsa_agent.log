@@ -538,3 +538,223 @@
  * Running on http://192.168.0.9:5001
 2026-04-05 16:14:06,700 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
 2026-04-05 16:14:10,145 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:14:10] "GET /health HTTP/1.1" 200 -
+2026-04-05 16:14:14,514 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:14:14,515 - __main__ - INFO - 📨 Received from +917010384691: can i skip gym today?
+2026-04-05 16:14:14,515 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: can i skip gym today?...
+2026-04-05 16:14:14,515 - main - INFO - Decision simulated: can i skip gym today?
+2026-04-05 16:14:14,515 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:14:14,671 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:14:14,672 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:14:14] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:14:29,688 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:14:29,689 - __main__ - INFO - 📨 Received from +917010384691: should i study harder?
+2026-04-05 16:14:29,689 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: should i study harder?...
+2026-04-05 16:14:29,690 - main - INFO - Decision simulated: should i study harder?
+2026-04-05 16:14:29,690 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:14:29,833 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:14:29,835 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:14:29] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:14:44,849 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:14:44,849 - __main__ - INFO - 📨 Received from +917010384691: can i skip class today?
+2026-04-05 16:14:44,849 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: can i skip class today?...
+2026-04-05 16:14:44,849 - main - INFO - Decision simulated: can i skip class today?
+2026-04-05 16:14:44,850 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:14:44,995 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:14:44,996 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:14:44] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:15:00,010 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:15:00,010 - __main__ - INFO - 📨 Received from +917010384691: should i study for 3 hours?
+2026-04-05 16:15:00,010 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: should i study for 3 hours?...
+2026-04-05 16:15:00,011 - main - INFO - Decision simulated: should i study for 3 hours?
+2026-04-05 16:15:00,011 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:15:00,155 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:15:00,156 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:15:00] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:15:15,168 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:15:15,170 - __main__ - INFO - 📨 Received from +917010384691: should i hit the gym?
+2026-04-05 16:15:15,170 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: should i hit the gym?...
+2026-04-05 16:15:15,170 - main - INFO - Decision simulated: should i hit the gym?
+2026-04-05 16:15:15,170 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:15:15,311 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:15:15,312 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:15:15] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:15:30,326 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:15:30,327 - __main__ - INFO - 📨 Received from +917010384691: should i work late tonight?
+2026-04-05 16:15:30,327 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: should i work late tonight?...
+2026-04-05 16:15:30,327 - main - INFO - Decision simulated: should i work late tonight?
+2026-04-05 16:15:30,327 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:15:30,475 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:15:30,477 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:15:30] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:15:45,488 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:15:45,490 - __main__ - INFO - 📨 Received from +917010384691: can i take a break?
+2026-04-05 16:15:45,490 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: can i take a break?...
+2026-04-05 16:15:45,490 - main - INFO - Decision simulated: can i take a break?
+2026-04-05 16:15:45,490 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:15:45,625 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:15:45,625 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:15:45] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:16:00,639 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:16:00,639 - __main__ - INFO - 📨 Received from +917010384691: should i sleep now?
+2026-04-05 16:16:00,640 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: should i sleep now?...
+2026-04-05 16:16:00,640 - main - INFO - Decision simulated: should i sleep now?
+2026-04-05 16:16:00,640 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:16:00,782 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:16:00,783 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:16:00] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:16:10,465 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:16:10,466 - __main__ - INFO - 📨 Received from +917010384691: your custom decision here
+2026-04-05 16:16:10,603 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:16:10,604 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:16:10] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:16:15,793 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:16:15,793 - __main__ - INFO - 📨 Received from +917010384691: can i skip gym today?
+2026-04-05 16:16:15,793 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: can i skip gym today?...
+2026-04-05 16:16:15,793 - main - INFO - Decision simulated: can i skip gym today?
+2026-04-05 16:16:15,793 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:16:15,936 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:16:15,937 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:16:15] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:16:30,949 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:16:30,950 - __main__ - INFO - 📨 Received from +917010384691: should i study harder?
+2026-04-05 16:16:30,950 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: should i study harder?...
+2026-04-05 16:16:30,950 - main - INFO - Decision simulated: should i study harder?
+2026-04-05 16:16:30,950 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:16:31,098 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:16:31,098 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:16:31] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:16:46,111 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:16:46,111 - __main__ - INFO - 📨 Received from +917010384691: can i skip class today?
+2026-04-05 16:16:46,112 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: can i skip class today?...
+2026-04-05 16:16:46,112 - main - INFO - Decision simulated: can i skip class today?
+2026-04-05 16:16:46,112 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:16:46,268 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:16:46,269 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:16:46] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:17:01,276 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:17:01,277 - __main__ - INFO - 📨 Received from +917010384691: should i study for 3 hours?
+2026-04-05 16:17:01,277 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: should i study for 3 hours?...
+2026-04-05 16:17:01,277 - main - INFO - Decision simulated: should i study for 3 hours?
+2026-04-05 16:17:01,277 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:17:01,428 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:17:01,428 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:17:01] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:17:03,574 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:17:03] "GET /health HTTP/1.1" 200 -
+2026-04-05 16:17:07,367 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:17:07,367 - __main__ - INFO - 📨 Received from +917010384691: test message
+2026-04-05 16:17:07,504 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:17:07,504 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:17:07] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:17:16,437 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:17:16,438 - __main__ - INFO - 📨 Received from +917010384691: should i hit the gym?
+2026-04-05 16:17:16,438 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: should i hit the gym?...
+2026-04-05 16:17:16,439 - main - INFO - Decision simulated: should i hit the gym?
+2026-04-05 16:17:16,439 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:17:16,576 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:17:16,576 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:17:16] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:17:17,555 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:17:17] "GET /health HTTP/1.1" 200 -
+2026-04-05 16:17:31,589 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:17:31,590 - __main__ - INFO - 📨 Received from +917010384691: should i work late tonight?
+2026-04-05 16:17:31,590 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: should i work late tonight?...
+2026-04-05 16:17:31,590 - main - INFO - Decision simulated: should i work late tonight?
+2026-04-05 16:17:31,590 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:17:31,734 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:17:31,735 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:17:31] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:17:46,748 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:17:46,750 - __main__ - INFO - 📨 Received from +917010384691: can i take a break?
+2026-04-05 16:17:46,750 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: can i take a break?...
+2026-04-05 16:17:46,750 - main - INFO - Decision simulated: can i take a break?
+2026-04-05 16:17:46,750 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:17:46,899 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:17:46,900 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:17:46] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:18:01,915 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:18:01,916 - __main__ - INFO - 📨 Received from +917010384691: should i sleep now?
+2026-04-05 16:18:01,917 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: should i sleep now?...
+2026-04-05 16:18:01,917 - main - INFO - Decision simulated: should i sleep now?
+2026-04-05 16:18:01,918 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:18:02,134 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:18:02,135 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:18:02] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:18:17,146 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:18:17,147 - __main__ - INFO - 📨 Received from +917010384691: can i skip gym today?
+2026-04-05 16:18:17,147 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: can i skip gym today?...
+2026-04-05 16:18:17,147 - main - INFO - Decision simulated: can i skip gym today?
+2026-04-05 16:18:17,147 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:18:17,281 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:18:17,282 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:18:17] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:18:32,294 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:18:32,296 - __main__ - INFO - 📨 Received from +917010384691: should i study harder?
+2026-04-05 16:18:32,296 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: should i study harder?...
+2026-04-05 16:18:32,296 - main - INFO - Decision simulated: should i study harder?
+2026-04-05 16:18:32,296 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:18:32,433 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:18:32,434 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:18:32] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:18:47,463 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:18:47,464 - __main__ - INFO - 📨 Received from +917010384691: can i skip class today?
+2026-04-05 16:18:47,464 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: can i skip class today?...
+2026-04-05 16:18:47,465 - main - INFO - Decision simulated: can i skip class today?
+2026-04-05 16:18:47,465 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:18:47,601 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:18:47,601 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:18:47] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:19:02,613 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:19:02,613 - __main__ - INFO - 📨 Received from +917010384691: should i study for 3 hours?
+2026-04-05 16:19:02,614 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: should i study for 3 hours?...
+2026-04-05 16:19:02,614 - main - INFO - Decision simulated: should i study for 3 hours?
+2026-04-05 16:19:02,614 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:19:02,758 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:19:02,758 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:19:02] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:19:17,776 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:19:17,777 - __main__ - INFO - 📨 Received from +917010384691: should i hit the gym?
+2026-04-05 16:19:17,777 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: should i hit the gym?...
+2026-04-05 16:19:17,777 - main - INFO - Decision simulated: should i hit the gym?
+2026-04-05 16:19:17,777 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:19:17,916 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:19:17,917 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:19:17] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:19:32,926 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:19:32,926 - __main__ - INFO - 📨 Received from +917010384691: should i work late tonight?
+2026-04-05 16:19:32,927 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: should i work late tonight?...
+2026-04-05 16:19:32,927 - main - INFO - Decision simulated: should i work late tonight?
+2026-04-05 16:19:32,927 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:19:33,062 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:19:33,063 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:19:33] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:19:48,078 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:19:48,078 - __main__ - INFO - 📨 Received from +917010384691: can i take a break?
+2026-04-05 16:19:48,079 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: can i take a break?...
+2026-04-05 16:19:48,079 - main - INFO - Decision simulated: can i take a break?
+2026-04-05 16:19:48,079 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:19:48,269 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:19:48,270 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:19:48] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:20:03,276 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:20:03,276 - __main__ - INFO - 📨 Received from +917010384691: should i sleep now?
+2026-04-05 16:20:03,276 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: should i sleep now?...
+2026-04-05 16:20:03,276 - main - INFO - Decision simulated: should i sleep now?
+2026-04-05 16:20:03,276 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:20:03,437 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:20:03,438 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:20:03] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:20:18,454 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:20:18,455 - __main__ - INFO - 📨 Received from +917010384691: can i skip gym today?
+2026-04-05 16:20:18,456 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: can i skip gym today?...
+2026-04-05 16:20:18,456 - main - INFO - Decision simulated: can i skip gym today?
+2026-04-05 16:20:18,456 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:20:18,595 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:20:18,596 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:20:18] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:20:26,309 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 16:20:26,309 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 16:20:30,392 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 16 memories.
+2026-04-05 16:20:30,393 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 16:20:30,393 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 16:20:30,393 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 16:20:30,394 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 16:20:30,394 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 16:20:30,394 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 16:20:30,394 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 16:20:30,394 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 16:20:30,394 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+2026-04-05 16:20:33,622 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:20:33,623 - __main__ - INFO - 📨 Received from +917010384691: should i study harder?
+2026-04-05 16:20:33,624 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: should i study harder?...
+2026-04-05 16:20:33,624 - main - INFO - Decision simulated: should i study harder?
+2026-04-05 16:20:33,624 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:20:33,768 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:20:33,770 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:20:33] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:20:44,813 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:20:44] "GET /health HTTP/1.1" 200 -
+2026-04-05 16:20:48,782 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:20:48,783 - __main__ - INFO - 📨 Received from +917010384691: can i skip class today?
+2026-04-05 16:20:48,783 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: can i skip class today?...
+2026-04-05 16:20:48,783 - main - INFO - Decision simulated: can i skip class today?
+2026-04-05 16:20:48,783 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:20:48,949 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:20:48,949 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:20:48] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:21:03,451 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:21:03] "GET /health HTTP/1.1" 200 -
+2026-04-05 16:21:03,957 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:21:03,957 - __main__ - INFO - 📨 Received from +917010384691: should i study for 3 hours?
+2026-04-05 16:21:03,958 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: should i study for 3 hours?...
+2026-04-05 16:21:03,958 - main - INFO - Decision simulated: should i study for 3 hours?
+2026-04-05 16:21:03,958 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:21:04,097 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:21:04,097 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:21:04] "POST /webhook/whatsapp HTTP/1.1" 200 -
