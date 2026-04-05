@@ -15,6 +15,9 @@ import json
 from datetime import datetime
 from dotenv import load_dotenv
 from main import LifeSimulationAgent
+from context_aware_lsa import ContextAwareLSA
+from digital_twin import DigitalTwinAgent
+from behavior_manager import BehaviorManager
 import requests
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -246,13 +249,16 @@ Type anything to chat!"""
         return token == self.webhook_token
 
 
-# Global server instance
+# Global server instances
 whatsapp_server: Optional[LSAWhatsAppServer] = None
+context_lsa: Optional[ContextAwareLSA] = None
+digital_twin: Optional[DigitalTwinAgent] = None
+behavior_manager: Optional[BehaviorManager] = None
 
 
 def init_server():
-    """Initialize WhatsApp server."""
-    global whatsapp_server
+    """Initialize WhatsApp server and LSA agents."""
+    global whatsapp_server, context_lsa, digital_twin, behavior_manager
     
     api_key = os.getenv("AGNES_CLAW_API_KEY", "")
     phone = os.getenv("WHATSAPP_USER_NUMBER", "+917010384691")
@@ -263,6 +269,13 @@ def init_server():
         return False
 
     whatsapp_server = LSAWhatsAppServer(api_key, phone, token)
+    
+    # Initialize new agents
+    context_lsa = ContextAwareLSA("default")
+    digital_twin = DigitalTwinAgent("default")
+    behavior_manager = BehaviorManager("default")
+    
+    logger.info("✅ All agents initialized: LSA, Context-Aware LSA, Digital Twin")
     return True
 
 
@@ -345,6 +358,187 @@ def verify_webhook():
         "message": "LSA WhatsApp webhook is active",
         "endpoint": "/webhook/whatsapp"
     }), 200
+
+
+@app.route("/api/lsa", methods=["POST"])
+def api_context_lsa():
+    """
+    Context-aware LSA endpoint - generates RELEVANT options for your specific decision.
+    
+    Request:
+    {
+        "decision": "Can I skip breakfast?",
+        "token": "lsa_secure_token"
+    }
+    
+    Response:
+    {
+        "question": "Can I skip breakfast?",
+        "scenarios": {"A": "...", "B": "...", "C": "..."},
+        "scores": {...},
+        "recommendation": "..."
+    }
+    """
+    try:
+        data = request.get_json()
+        if not data:
+            return jsonify({"error": "No data"}), 400
+        
+        decision = data.get("decision", "").strip()
+        token = data.get("token", "")
+        
+        if not decision:
+            return jsonify({"error": "No decision provided"}), 400
+        
+        if token != "lsa_secure_token":
+            return jsonify({"error": "Unauthorized"}), 401
+
+        # Generate context-aware scenarios (RELEVANT to the decision)
+        result = context_lsa.simulate_decision(decision)
+        
+        logger.info(f"✅ Context-aware LSA: {decision[:50]}")
+        
+        return jsonify({
+            "status": "ok",
+            "decision": decision,
+            "lsa_analysis": result
+        }), 200
+    
+    except Exception as e:
+        logger.error(f"❌ LSA error: {e}")
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route("/api/digital-twin", methods=["POST"])
+def api_digital_twin():
+    """
+    Digital Twin endpoint - your personal behavior mirror.
+    Analyzes situations based on YOUR patterns and emotions.
+    
+    Request:
+    {
+        "situation": "Should I go to the gym?",
+        "emotion": "tired",
+        "token": "lsa_secure_token"
+    }
+    
+    Response:
+    {
+        "analysis": {...},
+        "who_you_are": "...",
+        "recommendation": "..."
+    }
+    """
+    try:
+        data = request.get_json()
+        if not data:
+            return jsonify({"error": "No data"}), 400
+        
+        situation = data.get("situation", "").strip()
+        emotion = data.get("emotion", "neutral").strip()
+        token = data.get("token", "")
+        
+        if not situation:
+            return jsonify({"error": "No situation provided"}), 400
+        
+        if token != "lsa_secure_token":
+            return jsonify({"error": "Unauthorized"}), 401
+
+        # Get personalized analysis based on user's behavior
+        analysis = digital_twin.analyze_situation(situation, emotion)
+        
+        logger.info(f"✅ Digital Twin analysis: {situation[:50]}")
+        
+        return jsonify({
+            "status": "ok",
+            "analysis": analysis
+        }), 200
+    
+    except Exception as e:
+        logger.error(f"❌ Digital Twin error: {e}")
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route("/api/digital-twin/record", methods=["POST"])
+def record_decision_outcome():
+    """
+    Record what you actually did and how it went.
+    This trains your digital twin to know you better.
+    
+    Request:
+    {
+        "decision": "Should I go to the gym?",
+        "choice": "30-minute workout",
+        "outcome": "Felt good afterwards, not too exhausting",
+        "emotion": "happy",
+        "token": "lsa_secure_token"
+    }
+    """
+    try:
+        data = request.get_json()
+        token = data.get("token", "")
+        
+        if token != "lsa_secure_token":
+            return jsonify({"error": "Unauthorized"}), 401
+        
+        decision = data.get("decision", "").strip()
+        choice = data.get("choice", "").strip()
+        outcome = data.get("outcome", "").strip()
+        emotion = data.get("emotion", "neutral").strip()
+        
+        if not all([decision, choice, outcome]):
+            return jsonify({"error": "Missing required fields"}), 400
+        
+        # Record with the digital twin
+        result = digital_twin.record_choice_and_outcome(
+            decision=decision,
+            your_choice=choice,
+            how_it_went=outcome,
+            emotion=emotion
+        )
+        
+        logger.info(f"✅ Behavior recorded: {decision[:40]}")
+        
+        return jsonify({
+            "status": "recorded",
+            "message": result["message"],
+            "learning": result["learning"]
+        }), 200
+    
+    except Exception as e:
+        logger.error(f"❌ Record error: {e}")
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route("/api/digital-twin/profile", methods=["GET"])
+def get_digital_twin_profile():
+    """
+    Get your digital twin's summary - what it knows about you.
+    
+    Returns:
+    {
+        "total_decisions_learned": 5,
+        "who_you_are": "You're quite ambitious...",
+        "your_traits": {...},
+        "recent_patterns": [...]
+    }
+    """
+    try:
+        token = request.args.get("token", "")
+        
+        if token != "lsa_secure_token":
+            return jsonify({"error": "Unauthorized"}), 401
+        
+        mirror = digital_twin.get_mirror_summary()
+        
+        return jsonify({
+            "status": "ok",
+            "digital_twin_profile": mirror
+        }), 200
+    
+    except Exception as e:
+        logger.error(f"❌ Profile error: {e}")
+        return jsonify({"error": str(e)}), 500
 
 
 @app.errorhandler(404)
