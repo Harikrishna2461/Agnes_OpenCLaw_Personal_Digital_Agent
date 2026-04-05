@@ -1,0 +1,25 @@
+objc[4329]: Class AVFFrameReceiver is implemented in both /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1695b83a8) and /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/cv2/.dylibs/libavdevice.61.3.100.dylib (0x31b1243a8). One of the two will be used. Which one is undefined.
+objc[4329]: Class AVFAudioReceiver is implemented in both /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1695b83f8) and /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/cv2/.dylibs/libavdevice.61.3.100.dylib (0x31b1243f8). One of the two will be used. Which one is undefined.
+2026-04-05 15:12:42,000 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 15:12:42,000 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 15:12:45,702 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 15 memories.
+2026-04-05 15:12:45,704 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 15:12:45,704 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 15:12:45,705 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 15:12:45,705 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 15:12:45,705 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 15:12:45,705 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 15:12:45,705 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 15:12:45,705 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 15:12:45,705 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+
+╔════════════════════════════════════════════════════════════╗
+║         LSA WhatsApp Server (Production Ready)             ║
+╚════════════════════════════════════════════════════════════╝
+
+Starting WhatsApp webhook server...
+
+ * Serving Flask app 'whatsapp_server'
+ * Debug mode: off
+Address already in use
+Port 5001 is in use by another program. Either identify and stop that program, or start the server with a different port.

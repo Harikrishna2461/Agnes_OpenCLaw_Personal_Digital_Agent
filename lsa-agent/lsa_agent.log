@@ -1,0 +1,261 @@
+2026-04-05 14:16:23,577 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 14:16:23,577 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 14:16:30,773 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 0 memories.
+2026-04-05 14:16:30,774 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 14:16:30,775 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 14:16:30,775 - __main__ - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 14:16:32,429 - memory_manager.memory - INFO - Memory added: e7ed81e5-3bcc-49f3-acc2-35fc94befe9e (study)
+2026-04-05 14:16:32,429 - __main__ - INFO - Event logged: study - Completed full study session (2 hours)...
+2026-04-05 14:16:32,474 - memory_manager.memory - INFO - Memory added: 4fad20ce-84cb-4a17-8cc4-ea24e16c5d47 (health)
+2026-04-05 14:16:32,474 - __main__ - INFO - Event logged: health - Morning jog (30 min)...
+2026-04-05 14:16:32,515 - memory_manager.memory - INFO - Memory added: ed57dc2c-20b0-42a6-a0e2-a9f0255b5ddc (productivity)
+2026-04-05 14:16:32,515 - __main__ - INFO - Event logged: productivity - Afternoon work on project...
+2026-04-05 14:16:32,515 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: I am planning to skip studying today and watch TV ...
+2026-04-05 14:16:32,515 - __main__ - INFO - Decision simulated: I am planning to skip studying today and watch TV instead
+2026-04-05 14:16:32,515 - __main__ - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 14:16:32,516 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: I commit to studying for 2 hours every morning and...
+2026-04-05 14:16:32,516 - __main__ - INFO - Decision simulated: I commit to studying for 2 hours every morning and exercising 4x this week
+2026-04-05 14:16:32,516 - __main__ - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 14:16:46,173 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 14:16:46,173 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 14:16:49,202 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 3 memories.
+2026-04-05 14:16:49,203 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 14:16:49,203 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 14:16:49,203 - __main__ - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 14:16:49,478 - memory_manager.memory - INFO - Memory added: 92475f9b-d2f2-46d1-9cc0-21af17c3c500 (study)
+2026-04-05 14:16:49,478 - __main__ - INFO - Event logged: study - Completed full study session (2 hours)...
+2026-04-05 14:16:49,519 - memory_manager.memory - INFO - Memory added: 78185be3-3fa2-4e0a-9ab8-eb0431796971 (health)
+2026-04-05 14:16:49,519 - __main__ - INFO - Event logged: health - Morning jog (30 min)...
+2026-04-05 14:16:49,560 - memory_manager.memory - INFO - Memory added: 65dc4427-5428-451a-92b5-3a0786d0cc39 (productivity)
+2026-04-05 14:16:49,560 - __main__ - INFO - Event logged: productivity - Afternoon work on project...
+2026-04-05 14:16:49,561 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: I am planning to skip studying today and watch TV ...
+2026-04-05 14:16:49,561 - __main__ - INFO - Decision simulated: I am planning to skip studying today and watch TV instead
+2026-04-05 14:16:49,561 - __main__ - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 14:16:49,561 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: I commit to studying for 2 hours every morning and...
+2026-04-05 14:16:49,561 - __main__ - INFO - Decision simulated: I commit to studying for 2 hours every morning and exercising 4x this week
+2026-04-05 14:16:49,561 - __main__ - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 14:35:21,537 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 14:35:21,537 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 14:35:24,743 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 6 memories.
+2026-04-05 14:35:24,743 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 14:35:24,743 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 14:35:24,743 - __main__ - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 14:35:25,190 - memory_manager.memory - INFO - Memory added: 86531cdf-5139-435b-9497-cd8cfe4d52f3 (study)
+2026-04-05 14:35:25,190 - __main__ - INFO - Event logged: study - Completed full study session (2 hours)...
+2026-04-05 14:35:25,233 - memory_manager.memory - INFO - Memory added: 99aacbaf-2eb3-4ee8-957d-66c0742d3350 (health)
+2026-04-05 14:35:25,233 - __main__ - INFO - Event logged: health - Morning jog (30 min)...
+2026-04-05 14:35:25,275 - memory_manager.memory - INFO - Memory added: 4d66a3cd-fc06-47b6-b179-925723605200 (productivity)
+2026-04-05 14:35:25,275 - __main__ - INFO - Event logged: productivity - Afternoon work on project...
+2026-04-05 14:35:25,275 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: I am planning to skip studying today and watch TV ...
+2026-04-05 14:35:25,275 - __main__ - INFO - Decision simulated: I am planning to skip studying today and watch TV instead
+2026-04-05 14:35:25,275 - __main__ - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 14:35:25,275 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: I commit to studying for 2 hours every morning and...
+2026-04-05 14:35:25,275 - __main__ - INFO - Decision simulated: I commit to studying for 2 hours every morning and exercising 4x this week
+2026-04-05 14:35:25,275 - __main__ - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 14:49:37,416 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 14:49:37,416 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 14:49:40,972 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 9 memories.
+2026-04-05 14:49:40,972 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 14:49:40,972 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 14:49:40,972 - __main__ - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 14:49:41,503 - memory_manager.memory - INFO - Memory added: 66945575-427c-44f9-981f-6cb91b4de4ea (study)
+2026-04-05 14:49:41,503 - __main__ - INFO - Event logged: study - Completed full study session (2 hours)...
+2026-04-05 14:49:41,545 - memory_manager.memory - INFO - Memory added: 8914656a-0b11-4338-9811-cd7b243cc676 (health)
+2026-04-05 14:49:41,545 - __main__ - INFO - Event logged: health - Morning jog (30 min)...
+2026-04-05 14:49:41,585 - memory_manager.memory - INFO - Memory added: 7213d1ba-097d-476c-bc6a-8902947b70a9 (productivity)
+2026-04-05 14:49:41,585 - __main__ - INFO - Event logged: productivity - Afternoon work on project...
+2026-04-05 14:49:41,585 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: I am planning to skip studying today and watch TV ...
+2026-04-05 14:49:41,585 - __main__ - INFO - Decision simulated: I am planning to skip studying today and watch TV instead
+2026-04-05 14:49:41,585 - __main__ - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 14:49:41,585 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: I commit to studying for 2 hours every morning and...
+2026-04-05 14:49:41,585 - __main__ - INFO - Decision simulated: I commit to studying for 2 hours every morning and exercising 4x this week
+2026-04-05 14:49:41,585 - __main__ - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 14:49:53,617 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 14:49:53,617 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 14:49:56,714 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 12 memories.
+2026-04-05 14:49:56,715 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 14:49:56,715 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 14:49:56,715 - __main__ - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 14:49:56,865 - memory_manager.memory - INFO - Memory added: eaf53ab1-3aac-43b8-ace9-e895b4781b35 (study)
+2026-04-05 14:49:56,865 - __main__ - INFO - Event logged: study - Completed full study session (2 hours)...
+2026-04-05 14:49:56,904 - memory_manager.memory - INFO - Memory added: 0f708004-4769-4b61-b8b0-0bd1118f4d24 (health)
+2026-04-05 14:49:56,904 - __main__ - INFO - Event logged: health - Morning jog (30 min)...
+2026-04-05 14:49:56,941 - memory_manager.memory - INFO - Memory added: e6835528-1cfc-49cb-a65f-bbbaa4a67be1 (productivity)
+2026-04-05 14:49:56,941 - __main__ - INFO - Event logged: productivity - Afternoon work on project...
+2026-04-05 14:49:56,941 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: I am planning to skip studying today and watch TV ...
+2026-04-05 14:49:56,941 - __main__ - INFO - Decision simulated: I am planning to skip studying today and watch TV instead
+2026-04-05 14:49:56,941 - __main__ - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 14:49:56,941 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: I commit to studying for 2 hours every morning and...
+2026-04-05 14:49:56,941 - __main__ - INFO - Decision simulated: I commit to studying for 2 hours every morning and exercising 4x this week
+2026-04-05 14:49:56,941 - __main__ - INFO - Recommendation: C: Optimal Behavior
+2026-04-05 14:50:35,014 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 14:50:35,014 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 14:50:38,270 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 15 memories.
+2026-04-05 14:50:38,271 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 14:50:38,271 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 14:50:38,271 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 14:50:38,271 - __main__ - INFO - ✅ WhatsApp OpenClaw daemon initialized for whatsapp:+917010384691
+2026-04-05 14:50:38,271 - __main__ - INFO - 🚀 WhatsApp daemon running (OpenClaw)...
+2026-04-05 14:50:38,271 - __main__ - INFO - 📱 Number: whatsapp:+917010384691
+2026-04-05 14:50:38,271 - __main__ - INFO - Type messages to test locally, or receive from WhatsApp
+2026-04-05 14:51:09,335 - __main__ - INFO - 📨 Received: Hey I wanna skip exercise today since I have been grinding out 2-3 days in the gym this week
+2026-04-05 14:51:09,551 - __main__ - ERROR - ❌ Error sending message: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with url: /v1/messages/send (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)')))
+2026-04-05 14:51:09,552 - __main__ - INFO - 📝 Message queued locally: 📊 *LSA Daily Status*
+
+📈 Activities: 15
+⭐ Avg Impac...
+2026-04-05 14:56:49,480 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 14:56:49,480 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 14:56:53,016 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 15 memories.
+2026-04-05 14:56:53,016 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 14:56:53,016 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 14:56:53,016 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 14:56:53,016 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 14:56:53,016 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 14:56:53,016 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 14:56:53,016 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5000/webhook/whatsapp
+2026-04-05 14:56:53,016 - __main__ - INFO - 📊 Health: http://0.0.0.0:5000/health
+2026-04-05 14:56:53,016 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5000/webhook/verify
+2026-04-05 14:57:54,975 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 14:57:54,975 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 14:57:58,740 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 15 memories.
+2026-04-05 14:57:58,740 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 14:57:58,741 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 14:57:58,741 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 14:57:58,741 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 14:57:58,741 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 14:57:58,741 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 14:57:58,741 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5000/webhook/whatsapp
+2026-04-05 14:57:58,741 - __main__ - INFO - 📊 Health: http://0.0.0.0:5000/health
+2026-04-05 14:57:58,741 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5000/webhook/verify
+2026-04-05 14:59:07,499 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 14:59:07,499 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 14:59:11,642 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 15 memories.
+2026-04-05 14:59:11,642 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 14:59:11,642 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 14:59:11,642 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 14:59:11,642 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 14:59:11,642 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 14:59:11,642 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 14:59:11,642 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 14:59:11,642 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 14:59:11,642 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+2026-04-05 14:59:11,657 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.9:5001
+2026-04-05 14:59:11,657 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 14:59:11,692 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2026-04-05 14:59:19,189 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 14:59:19,189 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 14:59:22,347 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 15 memories.
+2026-04-05 14:59:22,347 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 14:59:22,347 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 14:59:22,347 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 14:59:22,347 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 14:59:22,347 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 14:59:22,347 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 14:59:22,347 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 14:59:22,347 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 14:59:22,347 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+2026-04-05 15:12:42,000 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 15:12:42,000 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 15:12:42,000 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 15:12:42,000 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 15:12:45,702 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 15 memories.
+2026-04-05 15:12:45,702 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 15 memories.
+2026-04-05 15:12:45,704 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 15:12:45,704 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 15:12:45,704 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 15:12:45,704 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 15:12:45,705 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 15:12:45,705 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 15:12:45,705 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 15:12:45,705 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 15:12:45,705 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 15:12:45,705 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 15:12:45,705 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 15:12:45,705 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 15:12:45,705 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 15:12:45,705 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 15:12:45,705 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+2026-04-05 15:12:45,705 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 15:12:45,705 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 15:12:45,705 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+2026-04-05 15:12:45,720 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.9:5001
+2026-04-05 15:12:45,720 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 15:12:46,058 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2026-04-05 15:12:56,325 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 15:12:56,325 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 15:12:59,506 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 15 memories.
+2026-04-05 15:12:59,507 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 15:12:59,507 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 15:12:59,507 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 15:12:59,507 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 15:12:59,507 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 15:12:59,508 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 15:12:59,508 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 15:12:59,508 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 15:12:59,508 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+2026-04-05 15:13:23,743 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 15:13:23,743 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 15:13:27,260 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 15 memories.
+2026-04-05 15:13:27,261 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 15:13:27,261 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 15:13:27,261 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 15:13:27,261 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 15:13:27,261 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 15:13:27,261 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 15:13:27,261 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 15:13:27,262 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 15:13:27,262 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+2026-04-05 15:19:34,235 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 15:19:34,235 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 15:19:37,737 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 15 memories.
+2026-04-05 15:19:37,738 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 15:19:37,739 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 15:19:37,739 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 15:19:37,739 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 15:19:37,739 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 15:19:37,739 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 15:19:37,739 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 15:19:37,739 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 15:19:37,739 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+2026-04-05 15:19:37,747 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.9:5001
+2026-04-05 15:19:37,747 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 15:19:37,757 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2026-04-05 15:19:44,827 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 15:19:44,827 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 15:19:47,768 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 15 memories.
+2026-04-05 15:19:47,768 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 15:19:47,768 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 15:19:47,768 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 15:19:47,768 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 15:19:47,768 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 15:19:47,768 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 15:19:47,768 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 15:19:47,768 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 15:19:47,768 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+2026-04-05 15:20:18,970 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 15:20:18,970 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 15:20:22,218 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 15 memories.
+2026-04-05 15:20:22,218 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 15:20:22,218 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 15:20:22,218 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 15:20:22,218 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 15:20:22,218 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 15:20:22,218 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 15:20:22,218 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 15:20:22,218 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 15:20:22,218 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+2026-04-05 15:20:22,240 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.9:5001
+2026-04-05 15:20:22,240 - werkzeug - INFO - [33mPress CTRL+C to quit[0m

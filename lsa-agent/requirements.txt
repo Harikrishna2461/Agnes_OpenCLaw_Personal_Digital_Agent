@@ -1,0 +1,42 @@
+# Life Simulation Agent (LSA) Requirements
+
+# Core Dependencies
+python>=3.9
+
+# ML & NLP
+sentence-transformers>=2.2.0
+numpy>=1.21.0
+scikit-learn>=1.0.0
+
+# Data Storage
+faiss-cpu>=1.7.0  # Or faiss-gpu for GPU support
+
+# Telegram Integration
+python-telegram-bot>=20.0
+
+# HTTP requests for API calls
+requests>=2.28.0
+
+# Web framework for WhatsApp webhook
+flask>=2.0.0
+
+# Job Scheduling
+APScheduler>=3.10.0
+
+# Configuration
+python-dotenv>=0.19.0
+
+# Logging & Monitoring
+colorlog>=6.7.0
+
+# Development
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+black>=22.0.0
+flake8>=4.0.0
+mypy>=0.950
+
+# Optional: Agnes Claw Model Integration
+# Uncomment when integrating with OpenClaw framework
+# agnes-claw>=0.1.0
+# openclaw>=0.1.0
