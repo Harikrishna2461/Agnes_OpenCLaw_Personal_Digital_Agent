@@ -399,3 +399,124 @@
 2026-04-05 15:46:37,150 - main - INFO - Recommendation: C: Optimal Behavior
 2026-04-05 15:46:37,443 - __main__ - ERROR - ❌ Send error: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with url: /v1/messages/send (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)')))
 2026-04-05 15:46:37,444 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 15:46:37] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:03:04,001 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 16:03:04,001 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 16:03:07,150 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 16 memories.
+2026-04-05 16:03:07,151 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 16:03:07,151 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 16:03:07,151 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 16:03:07,151 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 16:03:07,151 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 16:03:07,151 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 16:03:07,151 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 16:03:07,151 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 16:03:07,151 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+2026-04-05 16:03:10,737 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 16:03:10,737 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 16:03:13,682 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 16 memories.
+2026-04-05 16:03:13,683 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 16:03:13,683 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 16:03:13,683 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 16:03:13,683 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 16:03:13,683 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 16:03:13,683 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 16:03:13,683 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 16:03:13,683 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 16:03:13,683 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+2026-04-05 16:03:33,622 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 16:03:33,622 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 16:03:36,881 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 16 memories.
+2026-04-05 16:03:36,881 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 16:03:36,881 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 16:03:36,881 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 16:03:36,881 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 16:03:36,882 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 16:03:36,882 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 16:03:36,882 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 16:03:36,882 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 16:03:36,882 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+2026-04-05 16:03:36,886 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.9:5001
+2026-04-05 16:03:36,886 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 16:03:37,824 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:03:37] "GET /health HTTP/1.1" 200 -
+2026-04-05 16:06:28,611 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 16:06:28,612 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 16:06:32,064 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 16 memories.
+2026-04-05 16:06:32,065 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 16:06:32,065 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 16:06:32,065 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 16:06:32,065 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 16:06:32,065 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 16:06:32,065 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 16:06:32,065 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 16:06:32,065 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 16:06:32,065 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+2026-04-05 16:06:32,069 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.9:5001
+2026-04-05 16:06:32,069 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 16:06:32,941 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:06:32] "GET /health HTTP/1.1" 200 -
+2026-04-05 16:06:37,404 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:06:37,404 - __main__ - INFO - 📨 Received from +917010384691: can i skip class today?
+2026-04-05 16:06:37,404 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: can i skip class today?...
+2026-04-05 16:06:37,404 - main - INFO - Decision simulated: can i skip class today?
+2026-04-05 16:06:37,404 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:06:37,552 - __main__ - ERROR - ❌ Send error: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with url: /v1/messages/send (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)')))
+2026-04-05 16:06:37,553 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:06:37] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:07:17,395 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 16:07:17,395 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 16:07:20,618 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 16 memories.
+2026-04-05 16:07:20,618 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 16:07:20,618 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 16:07:20,618 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 16:07:20,618 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 16:07:20,618 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 16:07:20,618 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 16:07:20,618 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 16:07:20,618 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 16:07:20,618 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+2026-04-05 16:07:20,624 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.9:5001
+2026-04-05 16:07:20,624 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 16:07:23,781 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:07:23,781 - __main__ - INFO - 📨 Received from +917010384691: should i hit the gym?
+2026-04-05 16:07:23,782 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: should i hit the gym?...
+2026-04-05 16:07:23,782 - main - INFO - Decision simulated: should i hit the gym?
+2026-04-05 16:07:23,782 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:07:23,931 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:07:23,932 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:07:23] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:08:44,967 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2026-04-05 16:08:44,968 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-05 16:08:48,256 - memory_manager.memory - INFO - Memory Manager initialized. Loaded 16 memories.
+2026-04-05 16:08:48,256 - simulation_engine.simulation - INFO - Simulation Engine initialized
+2026-04-05 16:08:48,256 - intervention_engine.intervention - INFO - Intervention Engine initialized. Quiet hours: 22:00 - 08:00
+2026-04-05 16:08:48,256 - main - INFO - Life Simulation Agent initialized with all subsystems ready
+2026-04-05 16:08:48,256 - __main__ - INFO - ✅ WhatsApp Server initialized for whatsapp:+917010384691
+2026-04-05 16:08:48,256 - __main__ - INFO - 🚀 Starting LSA WhatsApp Server...
+2026-04-05 16:08:48,257 - __main__ - INFO - 📱 WhatsApp: whatsapp:+917010384691
+2026-04-05 16:08:48,257 - __main__ - INFO - 🌐 Webhook: http://0.0.0.0:5001/webhook/whatsapp
+2026-04-05 16:08:48,257 - __main__ - INFO - 📊 Health: http://0.0.0.0:5001/health
+2026-04-05 16:08:48,257 - __main__ - INFO - ✅ Verify: http://0.0.0.0:5001/webhook/verify
+2026-04-05 16:08:48,262 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.9:5001
+2026-04-05 16:08:48,262 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 16:08:51,265 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:08:51] "GET /health HTTP/1.1" 200 -
+2026-04-05 16:09:26,944 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:09:26] "GET /health HTTP/1.1" 200 -
+2026-04-05 16:09:49,130 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:09:49,131 - __main__ - INFO - 📨 Received from +917010384691: test message from curl
+2026-04-05 16:09:49,276 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:09:49,276 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:09:49] "POST /webhook/whatsapp HTTP/1.1" 200 -
+2026-04-05 16:09:52,361 - __main__ - INFO - ✅ Webhook received from +917010384691
+2026-04-05 16:09:52,361 - __main__ - INFO - 📨 Received from +917010384691: can i skip gym
+2026-04-05 16:09:52,361 - simulation_engine.simulation - INFO - Simulated 3 scenarios for decision: can i skip gym...
+2026-04-05 16:09:52,361 - main - INFO - Decision simulated: can i skip gym
+2026-04-05 16:09:52,361 - main - INFO - Recommendation: C: Maximum Effort / Ambitious
+2026-04-05 16:09:52,503 - __main__ - WARNING - ⚠️  OpenClaw send note: HTTPSConnectionPool(host='api.agnesai.com', port=443): Max retries exceeded with... (LSA logic works, response generated)
+2026-04-05 16:09:52,503 - werkzeug - INFO - 127.0.0.1 - - [05/Apr/2026 16:09:52] "POST /webhook/whatsapp HTTP/1.1" 200 -
